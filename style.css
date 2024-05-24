@@ -1,0 +1,497 @@
+/*ESTILO GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    scroll-behavior:smooth;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#16fd02;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #16fd02;
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #16fd02;
+}
+
+/*ESTILO DO CABEÇALHO*/
+header {
+    padding: 40px 4%;
+    position: fixed;
+    width: 100%; 
+    background-color:#000;
+}
+
+header .interface.logo img {
+    width: 164px;
+    height: 55px;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #727272;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: .2s;
+    padding: 10px 5px;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+  
+header .menu-item.active{
+    background-color:#363636;
+    color: #16fd02;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+header nav {
+    display: flex; 
+    align-items: center;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+    margin: 0 20px;
+}
+
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site {
+    padding: 160px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 20px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #16fd02;
+    font-size: 70px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 395px;
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+/*ESTILO DAS HABILIDADES*/
+section.habilidades-tecnicas {
+    padding: 135px 4%;
+}
+
+section.habilidades-tecnicas {
+    gap: 30px;
+}
+
+.habilidades-tecnicas .habilidades-box {
+    color: #fff;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 20px;
+    transition: 0.7s;
+    display: flex;
+    border: 1px solid green;
+}
+
+.habilidades-tecnicas .habilidades-box .conhecimento-texto {
+    margin-left: 30px;
+    color: #727272;
+    transition: 1s;
+}
+
+.habilidades-tecnicas .habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #16fd02;
+}
+
+.habilidades-tecnicas .habilidades-box:hover .conhecimento-texto {
+    color: #fff;
+}
+
+
+.habilidades-tecnicas .habilidades-box i {
+    font-size: 60px;
+    color: #16fd02;
+}
+
+.habilidades-tecnicas .habilidades-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.sobre .img-sobre img {
+    border-radius: 30px;
+    height: 500px;
+}
+
+/*ESTILO SOBRE*/
+section.sobre {
+    padding: 140px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #16fd02;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.sobre .txt-sobre a {
+    text-decoration: none;
+    color: #16fd02;
+    font-weight: bold;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #16fd02;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .5s;
+}
+
+.sobre .txt-sobre #btn-curriculo button {
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #16fd02;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/*ESTILO PORTFÓLIO*/
+section.portfolio {
+    padding: 135px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.img-port {
+    width: 320px;
+    height: 420px;
+    background-size: cover;
+    background-color: #e9ddddd0;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center top;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .3s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*ESTILO FORMULÁRIO DE CONTATO*/
+section.formulario {
+    padding: 135px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #363636;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #16fd02;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*ESTILO DO RODAPÉ*/
+
+footer {
+    padding: 0 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .logo-footer img {
+    width: 164px;
+    height: 55px;
+}
+
+footer .line-footer {
+    padding: 40px 0;
+}
+
+.borda {
+    border-top: 2px solid #16fd02;
+}
+
+footer .line-footer p i {
+    color: #16fd02;
+    font-size: 22px;
+    margin: 20px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+footer .line-footer p{
+    color: #fff;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 26px;
+        line-height: 20px;
+    }
+
+    /*CABEÇALHO*/
+    .menu,
+    .btn-contato {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 140px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 500px;
+        height: 350px;
+    }
+
+    /*ESTILO DAS HABILIDADES*/
+    section.habilidades-tecnicas {
+        padding: 40px 9%;
+    }
+
+    .habilidades-tecnicas .habilidades-box i {
+        font-size: 50px;
+    }
+
+    /*SOBRE*/
+    section.sobre .flex {
+        align-items: center;
+        gap: 60px;
+        flex-direction: column-reverse;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    /*PORTFÓLIO*/
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width:100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 40px;
+    }
+
+    /*RODAPÉ*/
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}
